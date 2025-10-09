@@ -32,7 +32,7 @@ async function cmhContactSubmit(e) {
   const statusEl = document.getElementById('contactStatus');
   const key = (window.CONTACT && window.CONTACT.web3formsKey) || '';
   if (!key) {
-    if (statusEl) statusEl.textContent = 'Form backend not configured yet. Please email caryn@cmh360.com directly.';
+    if (statusEl) statusEl.textContent = 'Form backend not configured yet. Please email info@cmh365.com directly.';
     return false;
   }
 
@@ -58,10 +58,10 @@ async function cmhContactSubmit(e) {
       if (statusEl) statusEl.textContent = 'Thanks! Your message has been sent.';
       form.reset();
     } else {
-      if (statusEl) statusEl.textContent = 'There was a problem sending your message. Please email caryn@cmh360.com.';
+      if (statusEl) statusEl.textContent = 'There was a problem sending your message. Please email info@cmh365.com.';
     }
   } catch (err) {
-    if (statusEl) statusEl.textContent = 'Network error. Please email caryn@cmh360.com.';
+    if (statusEl) statusEl.textContent = 'Network error. Please email info@cmh365.com.';
   }
   return false;
 }
