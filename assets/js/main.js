@@ -50,17 +50,28 @@ async function cmhContactSubmit(e) {
     if (statusEl) statusEl.textContent = 'Sending...';
     const res = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
       body: JSON.stringify(payload)
     });
-    const data = await res.json();
-    if (data.success) {
+    let data = {};
+    try {
+      data = await res.json();
+    } catch (_) {
+      // Non-JSON response
+    }
+    if (res.ok && data.success) {
       if (statusEl) statusEl.textContent = 'Thanks! Your message has been sent.';
       form.reset();
     } else {
-      if (statusEl) statusEl.textContent = 'There was a problem sending your message. Please email info@cmh365.com.';
+      console.error('Form submit error', { status: res.status, data });
+      const detail = data?.message ? ` (${data.message})` : '';
+      if (statusEl) statusEl.textContent = `There was a problem sending your message${detail}. Please email info@cmh365.com.`;
     }
   } catch (err) {
+    console.error('Form submit network error', err);
     if (statusEl) statusEl.textContent = 'Network error. Please email info@cmh365.com.';
   }
   return false;
