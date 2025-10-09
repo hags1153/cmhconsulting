@@ -36,7 +36,7 @@ function cmhContactSubmit(e) {
     msg
   ].filter(Boolean);
   const body = encodeURIComponent(bodyLines.join('\n'));
-  const mailto = `mailto:cmh-consulting@outlook.com?subject=${subject}&body=${body}`;
+  const mailto = `mailto:caryn@cmh365.com?subject=${subject}&body=${body}`;
   window.location.href = mailto;
   return false;
 }
