@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hags1153.github.io/cmhconsulting/sitemap.xml
