@@ -2,19 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CMH Consulting | Public Health Program Management</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CMH Consulting | Public Health Strategy, Programs, and Evaluation</title>
+  <meta name="description" content="CMH Consulting partners with public health organizations to design, manage, and evaluate programs that drive equitable, measurable impact." />
+  <meta property="og:title" content="CMH Consulting" />
+  <meta property="og:description" content="Strategy, program management, and evaluation for public health impact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hags1153.github.io/cmhconsulting/" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!-- NAVIGATION -->
-  <header class="navbar">
-    <div class="nav-container">
-      <div class="logo">CMH Consulting</div>
-      <nav>
-        <ul class="nav-links">
+  <header class="navbar" role="banner">
+    <div class="nav-container container">
+      <a class="brand" href="index.html" aria-label="CMH Consulting home">
+        <img src="assets/img/favicon.svg" alt="CMH" width="28" height="28" />
+        <div class="logo">CMH Consulting</div>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav role="navigation" aria-label="Primary">
+        <ul id="primary-navigation" class="nav-links">
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
@@ -26,55 +40,60 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>Empowering Public Health Through Strategy and Evidence</h1>
-      <p>CMH Consulting partners with health organizations to design, manage, and evaluate impactful public health programs that drive measurable results.</p>
-      <a href="contact.html" class="btn-primary">Schedule a Consultation</a>
+  <section class="hero" role="region" aria-label="Intro">
+    <div class="hero-content container">
+      <span class="badge">Public Health Consulting</span>
+      <h1>Empowering public health with strategy, programs, and evidence</h1>
+      <p>We help agencies and communities design, manage, and evaluate public health programs that drive equitable, measurable outcomes.</p>
+      <a href="contact.html" class="btn btn-primary">Schedule a consultation</a>
     </div>
   </section>
 
   <!-- ABOUT PREVIEW -->
-  <section class="about-preview fade-in">
-    <h2>Driven by Purpose, Guided by Experience</h2>
-    <p>
-      Led by <strong>Caryn Hamilton, BS, MPH</strong>, CMH Consulting brings a decade of leadership in public health program design and evaluation. Our mission is to help agencies and communities achieve equitable, evidence-based outcomes that last.
-    </p>
+  <section class="container" role="region" aria-label="About preview">
+    <div class="section-header">
+      <h2>Driven by purpose. Guided by experience.</h2>
+      <p class="muted">Led by <strong>Caryn Hamilton, BS, MPH</strong>, CMH Consulting brings deep experience in program design, evaluation, and health systems strengthening—translating data into action for sustainable impact.</p>
+    </div>
   </section>
 
   <!-- SERVICES -->
-  <section class="services fade-in">
-    <h2>Our Expertise</h2>
-    <div class="service-grid">
-      <div class="service-card">
+  <section class="container" role="region" aria-label="Core services">
+    <div class="section-header">
+      <h2>What we do</h2>
+      <p class="muted">End‑to‑end support across strategy, delivery, and measurement.</p>
+    </div>
+    <div class="cards">
+      <article class="card" aria-label="Program Design & Evaluation">
         <h3>Program Design & Evaluation</h3>
-        <p>Transforming data into action through measurable objectives, evidence-based planning, and performance tracking.</p>
-      </div>
-      <div class="service-card">
+        <p>Evidence‑based planning, logic models, indicators, and evaluation frameworks that turn objectives into outcomes.</p>
+      </article>
+      <article class="card" aria-label="Health Systems Strengthening">
         <h3>Health Systems Strengthening</h3>
-        <p>Building resilient systems that improve coordination, capacity, and long-term sustainability.</p>
-      </div>
-      <div class="service-card">
+        <p>Capacity building, governance, and performance management to align partners and sustain results.</p>
+      </article>
+      <article class="card" aria-label="Grant & Proposal Development">
         <h3>Grant & Proposal Development</h3>
-        <p>Crafting compelling proposals, logic models, and outcome frameworks for federal and state funding opportunities.</p>
-      </div>
-      <div class="service-card">
+        <p>Competitive narratives and budgets for federal and state opportunities, built on feasible, measurable plans.</p>
+      </article>
+      <article class="card" aria-label="Training & Workforce Development">
         <h3>Training & Workforce Development</h3>
-        <p>Empowering professionals through customized training, workshops, and strategic coaching.</p>
-      </div>
+        <p>Targeted workshops and coaching to upskill teams in data use, evaluation, and program management.</p>
+      </article>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="cta">
-    <h2>Let’s Build Impactful Public Health Solutions Together</h2>
-    <a href="contact.html" class="btn-secondary">Contact Caryn</a>
+  <section class="cta" role="region" aria-label="Call to action">
+    <div class="container">
+      <h2>Ready to accelerate your public health impact?</h2>
+      <a href="contact.html" class="btn btn-secondary">Contact Caryn</a>
+    </div>
   </section>
 
   <!-- FOOTER -->
-  <footer>
-    <p>© 2025 CMH Consulting | <a href="mailto:cmh-consulting@outlook.com">cmh-consulting@outlook.com</a></p>
+  <footer role="contentinfo">
+    <p>© 2025 CMH Consulting · <a href="mailto:cmh-consulting@outlook.com">cmh-consulting@outlook.com</a></p>
   </footer>
 
   <script src="assets/js/main.js"></script>
