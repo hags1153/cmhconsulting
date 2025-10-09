@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact | CMH Consulting</title>
@@ -10,9 +10,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
   <header class="navbar" role="banner">
     <div class="nav-container container">
       <a class="brand" href="index.html" aria-label="CMH Consulting home">
@@ -42,11 +42,11 @@
     <div class="contact-wrap">
       <div class="contact-card" aria-label="Contact details">
         <h3>Direct</h3>
-        <p><strong>Email:</strong> <a href="mailto:caryn@cmh365.com">caryn@cmh365.com</a></p>
+        <p><strong>Email:</strong> <a href="mailto:caryn@cmh360.com">caryn@cmh360.com</a></p>
         <p><strong>Availability:</strong> Mon–Fri, 9am–5pm ET</p>
         <p class="muted">Prefer email? Click to open a pre‑filled message with your subject.</p>
         <p>
-          <a class="btn btn-secondary" href="mailto:caryn@cmh365.com?subject=Consultation%20Inquiry%20from%20Website">Consult with CMH Consulting</a>
+          <a class="btn btn-secondary" href="mailto:caryn@cmh360.com?subject=Consultation%20Inquiry%20from%20Website">Consult with CMH Consulting</a>
         </p>
       </div>
 
@@ -65,16 +65,18 @@
           <label class="visually-hidden" for="message">Message</label>
           <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
 
-          <button class="btn btn-primary" type="submit">Send via Email</button>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+          <div id="contactStatus" class="muted" aria-live="polite"></div>
         </form>
       </div>
     </div>
   </section>
 
   <footer role="contentinfo">
-    <p>© 2025 CMH Consulting · <a href="mailto:caryn@cmh365.com">caryn@cmh365.com</a></p>
+    <p>© 2025 CMH Consulting · <a href="mailto:caryn@cmh360.com">caryn@cmh360.com</a></p>
   </footer>
 
+  <script src="assets/js/config.js"></script>
   <script src="assets/js/main.js"></script>
-</body>
-</html>
+  </body>
+  </html>
