@@ -1,0 +1,153 @@
+/* ---------- GLOBAL STYLES ---------- */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #003366;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  font-weight: 500;
+}
+
+.nav-links a.active {
+  border-bottom: 2px solid #ffcc00;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  background: url('../img/hero-bg.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+  background-color: #004080; /* fallback if no image */
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: #ffcc00;
+  color: #003366;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #e6b800;
+}
+
+/* ---------- SECTIONS ---------- */
+section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: white;
+  border-radius: 6px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* ---------- CONTACT PAGE ---------- */
+.contact-page {
+  text-align: center;
+}
+
+.contact-info {
+  background: #ffffff;
+  border-radius: 6px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  max-width: 500px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 2rem auto;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  background-color: #003366;
+  color: white;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+}
