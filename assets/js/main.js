@@ -25,9 +25,10 @@ async function cmhContactSubmit(e) {
   const form = e.target;
   const name = form.name?.value?.trim() || '';
   const email = form.email?.value?.trim() || '';
+  const phone = form.phone?.value?.trim() || '';
   const org = form.org?.value?.trim() || '';
   const msg = form.message?.value?.trim() || '';
-  const subject = 'Consultation Inquiry from Website';
+  const subject = form.subject?.value?.trim() || 'Consultation Inquiry from Website';
 
   const statusEl = document.getElementById('contactStatus');
   const key = (window.CONTACT && window.CONTACT.web3formsKey) || '';
@@ -42,6 +43,7 @@ async function cmhContactSubmit(e) {
     from_name: name,
     reply_to: email,
     message: msg,
+    phone,
     organization: org,
     page: location.href
   };
