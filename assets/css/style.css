@@ -49,9 +49,9 @@ a:hover { text-decoration: underline; }
 ======================== */
 .navbar { position: sticky; top: 0; z-index: 1000; background: linear-gradient(180deg, #0c1a2e, #0b1627); box-shadow: 0 1px 0 rgba(255,255,255,0.05); }
 .nav-container { display: flex; align-items: center; justify-content: space-between; padding: 0.9rem 1.25rem; }
-.brand { display: flex; align-items: center; gap: 0.7rem; }
-.brand img { width: 40px; height: 40px; }
-.logo { color: #ffffff; font-weight: 800; letter-spacing: 0.4px; font-size: 1.05rem; }
+.brand { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+.brand img { display:none; }
+.logo { color: #ffffff; font-weight: 900; letter-spacing: 0.6px; font-size: 1.2rem; }
 
 .nav-links { list-style: none; display: flex; gap: 1.25rem; margin: 0; padding: 0; }
 .nav-links a { color: #e8eef6; font-weight: 600; position: relative; padding: 0.25rem 0; }
